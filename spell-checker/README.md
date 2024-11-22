@@ -1,31 +1,23 @@
-# Make a spell checker!
+How to Compile and Run a Java Project
 
-Write a program that checks spelling. The input to the program is a dictionary file containing a list of valid words and a file containing the text to be checked.
+1. Install Java
+Make sure Java is installed on your system. Run the following command to check:
 
-The program should run on the command line like so:
+java -version
 
-```text
-<path to your program> dictionary.txt file-to-check.txt
-# output here
-```
+2. Navigate to Your Project Folder
+Open your terminal or command prompt, and navigate to the folder where your Java files are located.
 
-Your program should support the following features (time permitting):
+cd path/coding-exercises/spell-checker
+3. Compile the Java Files
+To compile all .java files in the folder, run:
 
-- The program outputs a list of incorrectly spelled words.
-- For each misspelled word, the program outputs a list of suggested words.
-- The program includes the line and column number of the misspelled word.
-- The program prints the misspelled word along with some surrounding context.
-- The program handles proper nouns (person or place names, for example) correctly.
+javac *.java
+This will generate .class files for each .java file in the same folder.
 
+4. Run the Java Program
+Run the class that contains the main method (replace MainClass with your class name):
 
-## Additional information
+java Main dictionary.txt file-to-check.txt nouns.txt
 
-- The formatting of the output is up to you, but make it easy to understand.
-- The dictionary file (`dictionary.txt` in the example above) is always a plain text file with one word per line.
-- You can use the `dictionary.txt` file included in this directory as your dictionary.
-- The input file (`file-to-check.txt` in the example above) is a plain text file that may contain full sentences and paragraphs.
-- You should come up with your own content to run through the spell checker.
-- Use any programming language, but extra credit for using Java or Kotlin.
-- Feel free to fork the repo and put your code in there or create a new blank repo and put your code in there instead.
-- Send us a link to your code and include instructions for how to build and run it.
-- Someone from Voze will review the code with you, so be prepared to discuss your code.
+Note: Feel free to modify dictionary.txt file-to-check.txt nouns.txt according to your needs
