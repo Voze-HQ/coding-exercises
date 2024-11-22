@@ -1,5 +1,4 @@
 How to Compile and Run a Java Project
-
 1. Install Java
 Make sure Java is installed on your system. Run the following command to check:
 
@@ -9,6 +8,7 @@ java -version
 Open your terminal or command prompt, and navigate to the folder where your Java files are located.
 
 cd path/coding-exercises/spell-checker
+
 3. Compile the Java Files
 To compile all .java files in the folder, run:
 
